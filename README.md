@@ -7,9 +7,9 @@
 </h4>
 
 <p align="center">
-  <a href="#challenge-architecture">Architecture</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#challenge-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#rocket-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#information_source-how-to-use">How To Use</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#black_square_button-architecture">Architecture</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </p>
 
 ## :rocket: Technologies
@@ -94,3 +94,8 @@ $ lerna run dcc-up
 ## :black_square_button: Architecture
 
 ![Image of Architecture](https://github.com/charlesmarafao/send4-challenge/blob/master/architecture.png?raw=true)
+
+<h4>
+  Opinião "The twerlve-Factor App"
+</h4>
+ "The twerlve-Factor App" é uma metodologia ou conjunto de boas práticas que originalmente foi feito para criação de "software-as-a-service", porém, se aplica também ao desenvolvimento de softwares em geral. Ao longo do tempo foi percebido a importância do ativo "código" para uma empresa de tecnologia, e o seu impacto direto no sucesso do negócio. Posto isso a execução das práticas declaradas neste manifesto ajudam os times a entregarem softwares resilientes e manuteníveis, com menos empecilhos à evolução.
