@@ -1,0 +1,37 @@
+version: '3.6'
+
+services:
+  api-gateway:
+    build: .
+    volumes:
+      - .:/home/node/api
+    command: yarn dev
+    environment:
+      - REDIS_URL=brute-redis
+    depends_on:
+      - brute-redis
+    links:
+      - brute-redis
+    networks:
+      - send4-network
+    container_name: api-gateway
+    ports:
+      - 3000:3000
+    expose:
+      - '3000'
+
+  brute-redis:
+    image: bitnami/redis:latest
+    user: root
+    container_name: brute-redis
+    restart: always
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+    volumes:
+      - /tmp/redis:/bitnami/redis/data3
+    networks:
+      - send4-network
+
+networks:
+  send4-network:
+    external: true

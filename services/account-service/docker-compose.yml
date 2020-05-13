@@ -1,0 +1,40 @@
+version: '3.6'
+
+networks:
+  send4-network:
+    external: true
+
+services:
+  account-api:
+    build: .
+    volumes:
+      - .:/home/node/api
+    environment:
+      - MONGO_URL=account-mongo
+    depends_on:
+      - account-mongo
+    networks:
+      - send4-network
+    links:
+      - account-mongo
+    container_name: account-api
+    command: yarn dev
+    ports:
+      - 3003:3003
+
+  account-mongo:
+    image: bitnami/mongodb:latest
+    user: root
+    container_name: account-mongo
+    restart: always
+    environment:
+      - ALLOW_EMPTY_PASSWORD=no
+      - MONGODB_USERNAME=${MONGO_USER}
+      - MONGODB_PASSWORD=${MONGO_PASS}
+      - MONGODB_DATABASE=${MONGO_DB}
+    ports:
+      - '27018:27017'
+    volumes:
+      - /tmp/mongo2:/bitnami
+    networks:
+      - send4-network

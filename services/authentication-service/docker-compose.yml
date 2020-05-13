@@ -1,0 +1,17 @@
+version: '3.6'
+
+networks:
+  send4-network:
+    external: true
+
+services:
+  authentication-api:
+    build: .
+    volumes:
+      - .:/home/node/api
+    networks:
+      - send4-network
+    container_name: authentication-api
+    command: yarn dev
+    ports:
+      - 3004:3004

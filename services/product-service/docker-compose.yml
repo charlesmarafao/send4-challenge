@@ -1,0 +1,38 @@
+version: '3.6'
+
+services:
+  product-api:
+    build: .
+    volumes:
+      - .:/home/node/api
+    command: yarn dev
+    environment:
+      - REDIS_URL=cache-redis
+    depends_on:
+      - cache-redis
+    links:
+      - cache-redis
+    networks:
+      - send4-network
+    container_name: product-api
+    ports:
+      - 3001:3001
+    expose:
+      - '3001'
+
+  cache-redis:
+    image: bitnami/redis:latest
+    user: root
+    container_name: cache-redis
+    restart: always
+    environment:
+      - ALLOW_EMPTY_PASSWORD=no
+      - REDIS_PASSWORD=${REDIS_PASS}
+    volumes:
+      - /tmp/redis:/bitnami/redis/data2
+    networks:
+      - send4-network
+
+networks:
+  send4-network:
+    external: true
