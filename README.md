@@ -46,7 +46,7 @@ This project was developed for a test with the following technologies:
 * [VS Code][vc] with [EditorConfig][vceditconfig] and [ESLint][vceslint]
 
 <h4>
-  Client
+  Client - This project was inspired by the rocketshoes project developed in the Rocketseat Bootcamp
 </h4>
 
 - [ReactJS](https://reactjs.org/)
@@ -90,3 +90,5 @@ $ lerna run dcc-up
 ```
 
 ## :black_square_button: Architecture
+
+![Image of Architecture](https://github.com/[username]/[reponame]/blob/[branch]/architecture.png?raw=true)
