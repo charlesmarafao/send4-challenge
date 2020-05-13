@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { Link, Router } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import {
   MdRemoveCircleOutline,
   MdAddCircleOutline,
@@ -138,7 +138,4 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = dispatch =>
   bindActionCreators(CartActions, dispatch);
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(Cart);
+export default connect(mapStateToProps, mapDispatchToProps)(Cart);

@@ -22,7 +22,7 @@ class Home extends Component {
 
     const manipulatedProducts = response.data.responseBody.products.map(
       product => ({
-        id: product.id,
+        id: Number(product.id),
         title: product.title,
         price: product.variants[0].price,
         image: product.images[0].src,
@@ -103,7 +103,4 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = dispatch =>
   bindActionCreators(CartActions, dispatch);
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(Home);
+export default connect(mapStateToProps, mapDispatchToProps)(Home);
