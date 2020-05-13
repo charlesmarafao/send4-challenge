@@ -91,4 +91,4 @@ $ lerna run dcc-up
 
 ## :black_square_button: Architecture
 
-![Image of Architecture](https://github.com/[username]/[reponame]/blob/[branch]/architecture.png?raw=true)
+![Image of Architecture](https://github.com/charlesmarafao/send4-challenge/blob/master/architecture.png?raw=true)
