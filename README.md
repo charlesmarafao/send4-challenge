@@ -82,7 +82,8 @@ $ docker network create -d bridge send4-network
 
 # Add SHOPIFY_BASE_URL sent by email to the product service env
 
-# Install dependencies and run the app
+# Install dependencies and run the app - alias to docker-compose
+#
 $ lerna run dcc-up
 ```
 
