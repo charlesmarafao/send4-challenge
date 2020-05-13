@@ -68,7 +68,7 @@ This project was developed for a test with the following technologies:
 
 ## :information_source: How To Use
 
-To clone and run this application, you'll need [Git](https://git-scm.com), [Node.js v10.16][nodejs] or higher, [Yarn v1.13][yarn], [Lerna v3.20.2][lerna] use (npm install --global lerna) + [Docker and Docker Compose](https://docs.docker.com/compose/install/) or higher installed on your computer. From your command line:
+To clone and run this application, you'll need [Git](https://git-scm.com), [Node.js v10.16](https://nodejs.org/en/) or higher, [Yarn v1.13](https://yarnpkg.com/), [Lerna v3.20.2](https://lerna.js.org/) use (npm install --global lerna) + [Docker and Docker Compose](https://docs.docker.com/compose/install/) or higher installed on your computer. From your command line:
 
 ```bash
 # Clone this repository
