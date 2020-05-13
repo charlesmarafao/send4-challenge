@@ -12,7 +12,7 @@
   <a href="#information_source-how-to-use">How To Use</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </p>
 
-## :challenge: Technologies
+## :rocket: Technologies
 
 This project was developed for a test with the following technologies:
 
@@ -86,4 +86,4 @@ $ docker network create -d bridge send4-network
 $ lerna run dcc-up
 ```
 
-## :challenge: Architecture
+## :black_square_button: Architecture
